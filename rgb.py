@@ -1,34 +1,3 @@
-'''
-  ------------------------------------------------------------------------------
-  10/24/2018
-  Author: Makerbro
-  Platforms: OSX/Linux/Windows
-  Language: Python (v2.7)
-  File: rgb.py
-  ------------------------------------------------------------------------------
-  Description: 
-  Code for YouTube video demonstrating how to deploy an IoT app. It involves
-  running a web server on a cloud service (in this case Heroku), and using
-  websockets to get the input from a user—the color of an RGB LED—via a webpage 
-  served by the web server. The selected color is sent to the ESP8266, which 
-  is setup to act as a client on the websocket.
-  https://youtu.be/mrxgH1vH5NE
-
-  Do you like my videos? You can support the channel:
-  https://patreon.com/acrobotic
-  https://paypal.me/acrobotic
-  ------------------------------------------------------------------------------
-  Please consider buying products from ACROBOTIC to help fund future
-  Open-Source projects like this! We'll always put our best effort in every
-  project, and release all our design files and code for you to use. 
-
-  https://acrobotic.com/
-  https://amazon.com/acrobotic
-  ------------------------------------------------------------------------------
-  License:
-  Please see attached LICENSE.txt file for details.
-  ------------------------------------------------------------------------------
-'''
 from flask import Flask, request, render_template
 from flask_sockets import Sockets
 import gevent
